@@ -1,5 +1,19 @@
+.menu-background {
+	margin-top: -100px;
+	z-index: -10;
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	background-color: rgb(220, 118, 51);
+/*	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/mind.jpg");*/
+}
+
 ul {
-	margin-left: -45px;
+	
+	margin-left: -50px;
 	width: 	42%;
 }
 
@@ -14,7 +28,7 @@ li {
 	color: #fff;
 	text-shadow: 1px 1px 2px black;
 	display: inline-block;
-	background-color: #8E44AD;
+	background-color: rgb(28, 40, 51);
 }
 
 
