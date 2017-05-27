@@ -11,29 +11,54 @@
 	background-image: url("../img/mind.jpg");*/
 }
 
+.sam {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.sam-picture {
+	width: 180px;
+}
+
+.menu-background2 {
+	border: 1px solid black;
+	position: fixed;
+	margin-left: 20px;
+	z-index: 10;
+	top: 50px;
+	background-color: salmon;
+	height: 90px;
+	width: 100%;
+	margin: 0;
+}
+
 ul {
+	animation: topDown 1s forwards;
+	z-index: 10;
+	position: fixed;
+	top: 20px;
+	margin-left: -110px;
 	
-	margin-left: -50px;
-	width: 	42%;
 }
 
 li {
+	padding: 8px;
 	box-shadow: 1px 1px 2px black;
-	font-family: 'Baloo', cursive;
+	font-family: 'Barrio', cursive;
 	text-align: center;
-	width: 100px;
-	margin: 10px;
+	width: 300px;
+	margin: 40px;
 	border-radius: 5px;
 	font-size: 20px;
-	color: #fff;
+	color: rgb(240,58,105);
 	text-shadow: 1px 1px 2px black;
 	display: inline-block;
-	background-color: rgb(28, 40, 51);
+	background-color: teal;
 }
 
 
 li:hover {
-	animation: fadein .25s;
+	animation: fadein 1s;
 	background-color: #fff;
 	color: #000;
 	text-shadow: 0px 0px 0px;

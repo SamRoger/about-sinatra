@@ -1,3 +1,23 @@
+@keyframes topDown {
+  0%,100% {
+    top: -100px; }
+  100% {
+    top: 20px; } }
+@keyframes bounce {
+  0%,100% {
+    font-size: 2em; }
+  100% {
+    font-size: 2.2em; } }
+@keyframes entranceLeft {
+  0%,100% {
+    left: 0px; }
+  100% {
+    left: 220px; } }
+@keyframes entranceRight {
+  0%,100% {
+    right: 0px; }
+  100% {
+    right: 220px; } }
 @keyframes fadeinOpacity {
   0%,100% {
     opacity: 0; }
@@ -12,12 +32,17 @@
   0%,100% {
     color: teal; }
   100% {
-    color: #8E44AD; } }
+    color: #f03a69; } }
 @keyframes size {
   0%,100% {
     font-size: 0px; }
   100% {
     font-size: 30px; } }
+@keyframes grayScale {
+  0%,100% {
+    filter: grayscale(0%); }
+  100% {
+    filter: grayscale(100%); } }
 @keyframes sepia {
   0%,100% {
     filter: grayscale(100%); }
@@ -42,6 +67,11 @@
     filter: blur(0px); }
   100% {
     filter: blur(5px); } }
+@keyframes blurOut {
+  0%,100% {
+    filter: blur(5px); }
+  100% {
+    filter: blur(10px); } }
 @keyframes motion {
   0%,100% {
     margin-left: 0; }

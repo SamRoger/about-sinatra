@@ -1,21 +1,9 @@
-var photos = document.getElementById("photos");
-var contact = document.getElementById("contact");
-var home = document.getElementById("home");
-var period = document.getElementsByClassName("period")[0];
+var rightSide = document.getElementsByClassName("right-side")[0];
+var picture = document.getElementsByClassName("sam-picture")[0];
 
-setTimeout(function() {
-	period.classList.add("period");
-},1000)
-
-home.addEventListener("click", function() {
-	home.style.backgroundColor = '#fff';
-	home.style.color = '#000'
-	home.style.textShadow = 'none'
+window.addEventListener("scroll", function() {
+	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+		rightSide.classList.add = 'grayScale'
+		picture.classList.add = 'grayScale'
+	}
 })
-
-photos.addEventListener("click", function() {
-	photos.style.backgroundColor = '#fff';
-	photos.style.color = '#000'
-	photos.style.textShadow = 'none'
-})
-
