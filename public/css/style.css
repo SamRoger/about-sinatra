@@ -122,40 +122,44 @@ body {
   animation: blurIn 2s forwards; }
 
 .bio {
+  animation: fadeinOpacity 5s forwards;
   color: #fff;
-  font-size: 18px;
+  /*font-size: 18px;*/
   font-family: 'Quattrocento', serif; }
 
 .helloWorld {
+  animation: fadeinOpacity 5s forwards;
   text-shadow: 1px 1px 2px black;
   animation: colorChange 2s;
   color: #8E44AD;
   font-family: 'Baloo', cursive; }
 
 .left-background {
-  animation: fadeinOpacity 5s forwards;
   padding-top: 200px;
   display: inline-block;
   text-align: center;
   margin-top: -70px;
-  z-index: -10;
   position: absolute;
+  z-index: -10;
   background-color: #34495e;
-  width: 52%;
-  height: 647px; }
+  width: 500px;
+  height: 447px; }
 
 .right-background {
-  animation: sepia 5s forwards;
-  position: absolute;
+  float: right;
+  animation: sepia 10s forwards;
   z-index: -10;
   margin-top: -70px;
-  right: 0px;
-  width: 48%;
+  width: 500px;
   height: 647px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/train.jpg"); }
+  background-image: url("../img/ralph-2.jpg"); }
+
+.split {
+  position: absolute;
+  border-left: thick solid red; }
 
 /*.middleView {
  	background-image: url("../img/right-side-bg.jpg");
@@ -166,26 +170,21 @@ body {
     background-size: cover;
 }*/
 ul {
-  width: 39%;
-  background-color: #000; }
+  margin-left: -45px;
+  width: 42%; }
 
 li {
-  opacity: 1;
+  box-shadow: 1px 1px 2px black;
   font-family: 'Baloo', cursive;
   text-align: center;
   width: 100px;
-  margin-top: 22px;
-  margin-bottom: 50px;
-  margin-bottom: 25px;
-  border: 1px solid black;
-  padding: 2px;
+  margin: 10px;
   border-radius: 5px;
-  background-color: #8E44AD;
   font-size: 20px;
-  margin-left: 20px;
   color: #fff;
   text-shadow: 1px 1px 2px black;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #8E44AD; }
 
 li:hover {
   animation: fadein .25s;
@@ -199,7 +198,7 @@ body {
   background-color: teal; }
 
 .site-container {
-  max-width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   margin: 0 auto; }
 

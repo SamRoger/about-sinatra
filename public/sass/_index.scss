@@ -9,12 +9,14 @@
 }
 
 .bio {
+	animation: fadeinOpacity 5s forwards;
 	color: #fff;
-	font-size: 18px;
+	/*font-size: 18px;*/
 	font-family: 'Quattrocento', serif;
 }
 
 .helloWorld {
+	animation: fadeinOpacity 5s forwards;
 	text-shadow: 1px 1px 2px black;
 	animation: colorChange 2s;
 	color: #8E44AD;
@@ -23,30 +25,33 @@
 
 
 .left-background {
-	animation: fadeinOpacity 5s forwards;
 	padding-top: 200px;
 	display: inline-block;
 	text-align: center;
 	margin-top: -70px;
-	z-index: -10;
 	position: absolute;
+	z-index: -10;
 	background-color: rgb(52, 73, 94);
-	width: 52%;
-	height: 647px;
+	width: 500px;
+	height: 447px;
 }
 
 .right-background {
-	animation: sepia 5s forwards;
-	position: absolute;
+	float: right;
+	animation: sepia 10s forwards;
 	z-index: -10;
 	margin-top: -70px;
-	right: 0px;
-	width: 48%;
+	width: 500px;
 	height: 647px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url("../img/train.jpg");
+	background-image: url("../img/ralph-2.jpg");
+}
+
+.split {
+	position: absolute;
+	border-left: thick solid red;
 }
 
 /*.middleView {
