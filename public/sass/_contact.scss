@@ -1,0 +1,38 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.containerContact {
+    box-shadow: 1px 1px 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(153,130,112);
+
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+.submit-container {
+   text-align: center;
+}
+
+.submit {
+    cursor: pointer;
+   
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Futura;
+}
+

@@ -1,0 +1,206 @@
+@keyframes fadeinOpacity {
+  0%,100% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    background-color: #8E44AD; }
+  to {
+    background-color: #fff; } }
+@keyframes colorChange {
+  0%,100% {
+    color: teal; }
+  100% {
+    color: #8E44AD; } }
+@keyframes size {
+  0%,100% {
+    font-size: 0px; }
+  100% {
+    font-size: 30px; } }
+@keyframes sepia {
+  0%,100% {
+    filter: grayscale(100%); }
+  100% {
+    filter: grayscale(0%); } }
+@keyframes blurOut {
+  0%,100% {
+    margin-left: 0; }
+  100% {
+    margin-left: 60px; }
+  0%,100% {
+    filter: blur(5px); }
+  100% {
+    filter: blur(0px); } }
+@keyframes blurIn {
+  0%,100% {
+    filter: blur(0px); }
+  100% {
+    filter: blur(5px); } }
+@keyframes motion {
+  0%,100% {
+    margin-left: 0; }
+  100% {
+    margin-left: 340px; } }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+.containerContact {
+  box-shadow: 1px 1px 2px black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #998270;
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 50px; }
+
+.submit-container {
+  text-align: center; }
+
+.submit {
+  cursor: pointer; }
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Futura; }
+
+body {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #e8ceb3; }
+
+.pic:hover {
+  border: 4px solid teal; }
+
+.pic {
+  box-shadow: 1px 1px 2px;
+  border: 1px solid black;
+  border-radius: 20px;
+  min-width: 150px;
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/philly_1.jpg"); }
+
+.tile-container {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px; }
+
+.boxes {
+  width: 50px;
+  height: 50px;
+  background-color: black; }
+
+.picShow {
+  border: 1px solid black;
+  box-shadow: 4px 4px 6px;
+  display: none;
+  border-radius: 20px;
+  width: 850px;
+  height: 650px;
+  background-size: 100%;
+  background-image: url("../img/philly_1.jpg"); }
+
+.lr-container {
+  margin-top: 100px; }
+
+.blurHover:hover {
+  animation: blurIn 2s forwards; }
+
+.bio {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Quattrocento', serif; }
+
+.helloWorld {
+  text-shadow: 1px 1px 2px black;
+  animation: colorChange 2s;
+  color: #8E44AD;
+  font-family: 'Baloo', cursive; }
+
+.left-background {
+  animation: fadeinOpacity 5s forwards;
+  padding-top: 200px;
+  display: inline-block;
+  text-align: center;
+  margin-top: -70px;
+  z-index: -10;
+  position: absolute;
+  background-color: #34495e;
+  width: 52%;
+  height: 647px; }
+
+.right-background {
+  animation: sepia 5s forwards;
+  position: absolute;
+  z-index: -10;
+  margin-top: -70px;
+  right: 0px;
+  width: 48%;
+  height: 647px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/train.jpg"); }
+
+/*.middleView {
+ 	background-image: url("../img/right-side-bg.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+ul {
+  width: 39%;
+  background-color: #000; }
+
+li {
+  opacity: 1;
+  font-family: 'Baloo', cursive;
+  text-align: center;
+  width: 100px;
+  margin-top: 22px;
+  margin-bottom: 50px;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #8E44AD;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  display: inline-block; }
+
+li:hover {
+  animation: fadein .25s;
+  background-color: #fff;
+  color: #000;
+  text-shadow: 0px 0px 0px; }
+
+body {
+  margin: 0;
+  margin-top: 80px;
+  background-color: teal; }
+
+.site-container {
+  max-width: 80%;
+  margin: 0 auto;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

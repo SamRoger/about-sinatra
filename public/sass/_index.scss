@@ -1,0 +1,62 @@
+
+
+.lr-container {
+	margin-top: 100px;
+}
+
+.blurHover:hover {
+	animation: blurIn 2s forwards;
+}
+
+.bio {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Quattrocento', serif;
+}
+
+.helloWorld {
+	text-shadow: 1px 1px 2px black;
+	animation: colorChange 2s;
+	color: #8E44AD;
+	font-family: 'Baloo', cursive;
+}
+
+
+.left-background {
+	animation: fadeinOpacity 5s forwards;
+	padding-top: 200px;
+	display: inline-block;
+	text-align: center;
+	margin-top: -70px;
+	z-index: -10;
+	position: absolute;
+	background-color: rgb(52, 73, 94);
+	width: 52%;
+	height: 647px;
+}
+
+.right-background {
+	animation: sepia 5s forwards;
+	position: absolute;
+	z-index: -10;
+	margin-top: -70px;
+	right: 0px;
+	width: 48%;
+	height: 647px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/train.jpg");
+}
+
+/*.middleView {
+ 	background-image: url("../img/right-side-bg.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
+

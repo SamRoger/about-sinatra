@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Sam</title>
+   <!-- ---------------------- -->
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+	<!-- ---------------------- -->
+		<link rel="stylesheet" href="/css/style.css">
+	<!-- ---------------------- -->
+
+  </head>
+  <body>
+  	<div class="site-container">
+<!-- 	    <div class="menu-background"></div>
+ -->			
+		  		<ul class="menu">
+		  			<a href="/"><li id="home">Home</li></a>
+		  			<a href="/photos"><li id="photos">Photos</li></a>
+		  			<a href="/contact"><li id="contact">Contact</li></a>
+		  		</ul>
+
+		<%= yield %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+	</div>
+  </body>
+</html>

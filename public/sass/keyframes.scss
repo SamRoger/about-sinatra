@@ -1,0 +1,42 @@
+@keyframes fadeinOpacity {
+	0%,100% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+@keyframes fadein {
+	from { background-color: #8E44AD }
+	to { background-color: #fff }
+}
+
+@keyframes colorChange {
+	0%,100% { color: teal; }
+	100% { color: #8E44AD; }
+}
+
+@keyframes size {
+	0%,100% { font-size: 0px; }
+	100% { font-size: 30px; }
+}
+
+@keyframes sepia {
+	0%,100% { filter: grayscale(100%); }
+	100% { filter: grayscale(0%); }
+}
+
+@keyframes blurOut {
+	0%,100% { margin-left: 0; }
+  100% { margin-left: 60px; }
+
+	0%,100% { filter: blur(5px); }
+		100% { filter: blur(0px); }
+}
+
+@keyframes blurIn {
+	0%,100% { filter: blur(0px); }
+	100% { filter: blur(5px); }
+}
+
+@keyframes motion {
+	0%,100% { margin-left: 0; }
+  100% { margin-left: 340px; }
+}
