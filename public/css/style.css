@@ -186,15 +186,17 @@ body {
   position: absolute;
   z-index: -10;
   background-color: #1c2833;
-  width: 500px;
+  width: 501px;
   height: 547px; }
+  .left-background:hover {
+    animation: sepiain 5s forwards; }
 
 .right-background {
   border-radius: 10px;
   float: right;
   z-index: -10;
   margin-top: 70px;
-  width: 500px;
+  width: 499px;
   height: 647px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +206,8 @@ body {
     cursor: pointer;
     animation: sepiain 5s forwards; }
 
-.sam {
+.samName {
+  text-shadow: 1px 1px 2px black;
   color: #dc7633;
   font-family: 'Barrio', cursive; }
 
@@ -217,7 +220,7 @@ body {
     cursor: pointer;
     animation: sepiain 5s forwards; }
 
-.middle-view {
+.middle-view-parallax {
   position: relative;
   top: 715px;
   padding-top: 50px;
