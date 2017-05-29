@@ -25,7 +25,7 @@
 	position: fixed;
 	margin-left: 20px;
 	z-index: 10;
-	top: 50px;
+	top: 38px;
 	background-color: salmon;
 	height: 90px;
 	width: 100%;
@@ -36,12 +36,11 @@ ul {
 	animation: topDown 1s forwards;
 	z-index: 10;
 	position: fixed;
-	top: 20px;
 	margin-left: -110px;
-	
 }
 
 li {
+	cursor: pointer;
 	padding: 8px;
 	box-shadow: 1px 1px 2px black;
 	font-family: 'Barrio', cursive;
@@ -54,15 +53,20 @@ li {
 	text-shadow: 1px 1px 2px black;
 	display: inline-block;
 	background-color: teal;
-}
+	&:hover {
 
-
-li:hover {
 	animation: fadein 1s;
 	background-color: #fff;
-	color: #000;
-	text-shadow: 0px 0px 0px;
+	color: teal;
+	text-shadow: 1px 1px 2px black;
+	}
 }
+
+.porfolio {
+	padding-top: 20px;
+}
+
+
 
 
 

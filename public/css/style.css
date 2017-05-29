@@ -2,7 +2,7 @@
   0%,100% {
     top: -100px; }
   100% {
-    top: 20px; } }
+    top: 7px; } }
 @keyframes bounce {
   0%,100% {
     font-size: 2em; }
@@ -221,15 +221,19 @@ body {
     animation: sepiain 5s forwards; }
 
 .middle-view-parallax {
+  padding: 10px;
   position: relative;
   top: 715px;
-  padding-top: 50px;
   background-image: url("../img/mind.png");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.linkedin, .github {
+  margin-left: 7px;
+  width: 30px; }
 
 .menu-background {
   margin-top: -100px;
@@ -255,7 +259,7 @@ body {
   position: fixed;
   margin-left: 20px;
   z-index: 10;
-  top: 50px;
+  top: 38px;
   background-color: salmon;
   height: 90px;
   width: 100%;
@@ -265,10 +269,10 @@ ul {
   animation: topDown 1s forwards;
   z-index: 10;
   position: fixed;
-  top: 20px;
   margin-left: -110px; }
 
 li {
+  cursor: pointer;
   padding: 8px;
   box-shadow: 1px 1px 2px black;
   font-family: 'Barrio', cursive;
@@ -281,12 +285,26 @@ li {
   text-shadow: 1px 1px 2px black;
   display: inline-block;
   background-color: teal; }
+  li:hover {
+    animation: fadein 1s;
+    background-color: #fff;
+    color: teal;
+    text-shadow: 1px 1px 2px black; }
 
-li:hover {
-  animation: fadein 1s;
-  background-color: #fff;
-  color: #000;
-  text-shadow: 0px 0px 0px; }
+.porfolio {
+  padding-top: 20px; }
+
+.skills-container {
+  color: #fff;
+  position: absolute;
+  z-index: -100;
+  margin-top: 1300px;
+  width: 70%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/pov.jpg"); }
 
 body {
   margin: 0;
