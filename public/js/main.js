@@ -1,37 +1,60 @@
 var rightSide = document.getElementsByClassName("right-background")[0];
 var leftSide = document.getElementsByClassName("left-background")[0];
-
-window.addEventListener("scroll", function() {
-	if (document.body.scrollTop > 230 || document.documentElement.scrollTop > 230) {
-		rightSide.style.filter = 'grayscale(100%)'
-		leftSide.style.filter = 'grayscale(100%)'
-	} else {
-		rightSide.style.filter = ""
-		leftSide.style.filter = ""
-	}
-})
-
 var menuBackground2 = document.getElementsByClassName("menu-background2")[0];
-
-window.addEventListener("scroll", function() {
-	if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-		menuBackground2.style.backgroundColor = 'rgb(168,86,79)'
-	} else {
-		menuBackground2.style.backgroundColor = ''
-	}
-})
-
-
 var skillsContainer = document.getElementsByClassName("skills-container")[0];
 
 window.addEventListener("scroll", function() {
-	if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
-		skillsContainer.style.animation = 'fadeinOpacity 10s forwards'
-		console.log("hi")
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		rightSide.style.animation = 'grayscale 5s forwards'
+		leftSide.style.animation  = 'grayscale 5s forwards'
 	} else {
-		skillsContainer.style.animation = ''	
+		rightSide.style.animation = 'colorIn 3s forwards'
+		leftSide.style.animation  = 'colorIn 3s forwards'
 	}
 })
+
+// window.addEventListener("scroll", function() {
+// 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+// 		console.log("hi")
+// 		menuBackground2.style.animation = 'menu-bg-fade 3s forwards'
+// 	} else {
+// 		menuBackground2.style.animation = ''
+// 	}
+// })
+
+
+
+
+
+
+
+
+
+
+window.addEventListener("scroll", function() {
+	if (document.body.scrollTop > 670) {
+		menuBackground2.style.animation = 'menu-bg-fade 3s forwards'
+	} else {
+		menuBackground2.style.animation = 'menu-bg-fade-out1 2s'
+	}
+})
+
+// window.addEventListener("scroll", function() {
+// 	if (document.body.scrollTop > 780) {
+// 		menuBackground2.style.animation = 'menu-bg-fade-midway 3s'
+// 	} else {
+// 		menuBackground2.style.animation = 'menu-bg-fade-back 3s forwards'
+// 	}
+// })
+
+
+// window.addEventListener("scroll", function() {
+// 	if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250) {
+// 		skillsContainer.style.animation = 'fadeinOpacity 2s forwards'
+// 	} else {
+// 		skillsContainer.style.animation = 'fadeOutOpacity 2s'	
+// 	}
+// })
 
 
 

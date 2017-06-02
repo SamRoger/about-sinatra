@@ -1,82 +1,112 @@
 @keyframes topDown {
-  0%,100% {
+  from {
     top: -100px; }
-  100% {
+  to {
     top: 7px; } }
 @keyframes bounce {
-  0%,100% {
+  from {
     font-size: 2em; }
-  100% {
+  to {
     font-size: 2.2em; } }
 @keyframes entranceLeft {
-  0%,100% {
+  from {
     left: 0px; }
-  100% {
+  to {
     left: 220px; } }
 @keyframes entranceRight {
-  0%,100% {
+  from {
     right: 0px; }
-  100% {
+  to {
     right: 220px; } }
 @keyframes fadeinOpacity {
-  0%,100% {
+  from {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
+@keyframes fadeOutOpacity {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 @keyframes fadein {
   from {
     background-color: #f03a69; }
   to {
     background-color: #fff; } }
 @keyframes colorChange {
-  0%,100% {
+  from {
     color: teal; }
-  100% {
+  to {
     color: #f03a69; } }
 @keyframes size {
-  0%,100% {
+  from {
     font-size: 0px; }
-  100% {
+  to {
     font-size: 30px; } }
-@keyframes grayScale {
-  0%,100% {
-    filter: grayscale(0%); }
-  100% {
-    filter: grayscale(100%); } }
 @keyframes sepia {
-  0%,100% {
+  from {
     filter: grayscale(100%); }
-  100% {
+  to {
     filter: grayscale(0%); } }
-@keyframes sepiain {
-  0%,100% {
+@keyframes menu-bg-fade {
+  from {
+    background-color: salmon; }
+  to {
+    background-color: #cccabe; } }
+@keyframes menu-bg-fade-out1 {
+  from {
+    background-color: #cccabe; }
+  to {
+    background-color: salmon; } }
+@keyframes menu-bg-fade-midway {
+  from {
+    background-color: #cccabe; }
+  to {
+    background-color: #a8564f; } }
+@keyframes menu-bg-fade-back {
+  from {
+    background-color: #a8564f; }
+  to {
+    background-color: #cccabe; } }
+@keyframes colorIn {
+  from {
+    filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%); } }
+@keyframes grayscale {
+  from {
     filter: grayscale(0%); }
-  100% {
-    filter: grayscale(1000%); } }
+  to {
+    filter: grayscale(100%); } }
 @keyframes blurOut {
-  0%,100% {
+  from {
     margin-left: 0; }
-  100% {
+  to {
     margin-left: 60px; }
-  0%,100% {
+  from {
     filter: blur(5px); }
-  100% {
+  to {
     filter: blur(0px); } }
 @keyframes blurIn {
-  0%,100% {
+  from {
     filter: blur(0px); }
-  100% {
+  to {
     filter: blur(5px); } }
 @keyframes blurOut {
-  0%,100% {
+  from {
     filter: blur(5px); }
-  100% {
+  to {
     filter: blur(10px); } }
 @keyframes motion {
-  0%,100% {
+  from {
     margin-left: 0; }
-  100% {
+  to {
     margin-left: 340px; } }
+@keyframes blurOut {
+  from {
+    filter: blur(0px); }
+  to {
+    filter: blur(5px); } }
 input[type=text], select, textarea {
   width: 100%;
   padding: 5px;
@@ -221,7 +251,7 @@ body {
     animation: sepiain 5s forwards; }
 
 .middle-view-parallax {
-  padding: 10px;
+  padding: 160px;
   position: relative;
   top: 715px;
   background-image: url("../img/mind.png");
@@ -269,7 +299,7 @@ ul {
   animation: topDown 1s forwards;
   z-index: 10;
   position: fixed;
-  margin-left: -110px; }
+  margin-left: -140px; }
 
 li {
   cursor: pointer;
@@ -284,7 +314,7 @@ li {
   color: #f03a69;
   text-shadow: 1px 1px 2px black;
   display: inline-block;
-  background-color: teal; }
+  background-color: black; }
   li:hover {
     animation: fadein 1s;
     background-color: #fff;
@@ -294,22 +324,49 @@ li {
 .porfolio {
   padding-top: 20px; }
 
+.github {
+  padding-top: 4px; }
+
+.gitTab {
+  height: 35px; }
+
 .skills-container {
+  /*opacity: 0;*/
   color: #fff;
   position: absolute;
   z-index: -100;
-  margin-top: 1300px;
-  width: 70%;
+  margin-top: 716px;
+  width: 100%;
+  height: 1000px;
+  background-color: teal; }
+
+.skills-image {
+  width: 40%;
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("../img/pov.jpg"); }
 
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover; }
+
 body {
   margin: 0;
   margin-top: 80px;
-  background-color: teal; }
+  background-color: #000; }
 
 .site-container {
   max-width: 1000px;
