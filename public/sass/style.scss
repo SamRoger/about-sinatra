@@ -9,13 +9,24 @@
 @import 'video-bg';
 
 body {
+	width: auto;
 	margin: 0;
 	margin-top: 80px;
 	background-color: #000;
 }
 
- .site-container {
+.site-container {
 	max-width: 1000px;
-   	margin: 0 auto; 
-    margin: 0 auto;
- }
+	margin: 0 auto; 
+	margin: 0 auto;
+
+}
+
+.display {
+	position: fixed;
+	z-index: 1000;
+	font-size: 30px;
+	color: teal;
+	margin-left: 10px;
+}
+

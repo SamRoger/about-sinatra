@@ -2,59 +2,64 @@ var rightSide = document.getElementsByClassName("right-background")[0];
 var leftSide = document.getElementsByClassName("left-background")[0];
 var menuBackground2 = document.getElementsByClassName("menu-background2")[0];
 var skillsContainer = document.getElementsByClassName("skills-container")[0];
-
-window.addEventListener("scroll", function() {
-	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-		rightSide.style.animation = 'grayscale 5s forwards'
-		leftSide.style.animation  = 'grayscale 5s forwards'
-	} else {
-		rightSide.style.animation = 'colorIn 3s forwards'
-		leftSide.style.animation  = 'colorIn 3s forwards'
-	}
-})
-
-// window.addEventListener("scroll", function() {
-// 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-// 		console.log("hi")
+// ==============================================================
+window.addEventListener("scroll", parallax);
+function parallax() {
+var parallax = document.getElementsByClassName("parallax")[0];
+	ypos = window.pageYOffset;
+	parallax.style.top = ypos * .5 + "px";
+}
+// ==============================================================
+var display = document.getElementsByClassName("display")[0];
+var scroll = window.pageYOffset;
+display.innerHTML = scroll
+// ==============================================================
+// window.addEventListener("scroll", menuBgFade);
+// function menuBgFade() {
+// 	console.log("down")
+// 	if (document.body.scrollTop > 720) {
 // 		menuBackground2.style.animation = 'menu-bg-fade 3s forwards'
-// 	} else {
-// 		menuBackground2.style.animation = ''
 // 	}
-// })
+// }
+// window.addEventListener("scroll", bottomUpScroll)
+// function bottomUpScroll() {
+// 	if (window.pageYOffset > 719) {
+// 		scrollDirection = false
+// 	} else if (scrollDirection === false) {
+// 		console.log("up")
+// 		menuBackground2.style.animation = 'menu-bg-fade-out1 3s forwards'
+// 	}
+// }
 
 
+window.addEventListener("scroll", test);
+function test() {
 
-
-
-
-
-
-
-
-window.addEventListener("scroll", function() {
-	if (document.body.scrollTop > 670) {
-		menuBackground2.style.animation = 'menu-bg-fade 3s forwards'
-	} else {
-		menuBackground2.style.animation = 'menu-bg-fade-out1 2s'
+if (window.pageYOffset > scroll) {
+	console.log("down")
+	if (window.pageYOffset > 100) {
+		console.log("down under 100")
 	}
-})
+}  else {
+	if (window.pageYOffset < 100) {
+		console.log("up over 100")
+	}
+		console.log("up")
+	}
+		scroll = window.pageYOffset
 
-// window.addEventListener("scroll", function() {
-// 	if (document.body.scrollTop > 780) {
-// 		menuBackground2.style.animation = 'menu-bg-fade-midway 3s'
-// 	} else {
-// 		menuBackground2.style.animation = 'menu-bg-fade-back 3s forwards'
-// 	}
-// })
+	// if (window.pageYOffset > 100) {
+	// 	menuBackground2.style.animation = 'menu-bg-fade 3s forwards'
+	// 	console.log("down")
+	// }
 
-
-// window.addEventListener("scroll", function() {
-// 	if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250) {
-// 		skillsContainer.style.animation = 'fadeinOpacity 2s forwards'
-// 	} else {
-// 		skillsContainer.style.animation = 'fadeOutOpacity 2s'	
-// 	}
-// })
+	// if (window.pageYOffset === currentScroll) {
+	// 	currentScroll = true
+	// } if (currentScroll === true) {
+	// 	menuBackground2.style.animation = 'menu-bg-fade-out1 3s forwards'
+	// 	console.log("up")
+	// }
+}
 
 
 

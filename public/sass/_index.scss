@@ -83,9 +83,10 @@
 	}
 }
 
-.middle-view-parallax {
-	padding: 160px;
+.parallax {
+	padding: 100px;
 	position: relative;
+	z-index: -100;
 	top: 715px;
  	background-image: url("../img/mind.png");
     min-height: 500px; 

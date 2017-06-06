@@ -44,9 +44,14 @@
 	to { font-size: 30px; }
 }
 
-@keyframes sepia {
+@keyframes colorIn {
 	from { filter: grayscale(100%); }
 	to { filter: grayscale(0%); }
+}
+
+@keyframes grayscale {
+	from { filter: grayscale(0%); }
+	to { filter: grayscale(100%); }
 }
 
 @keyframes menu-bg-fade {
@@ -69,15 +74,6 @@
 	to { background-color: rgb(204,202,190); }
 }
 
-@keyframes colorIn {
-	from { filter: grayscale(100%); }
-	to { filter: grayscale(0%); }
-}
-
-@keyframes grayscale {
-	from { filter: grayscale(0%); }
-	to { filter: grayscale(100%); }
-}
 
 // @keyframes grayscale100 {
 // 	from { filter: grayscale(0%); }
