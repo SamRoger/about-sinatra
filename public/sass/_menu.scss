@@ -21,6 +21,7 @@
 }
 
 .menu-background2 {
+	animation: menu-bg-fade-out1 1s forwards;
 	transition: all 1s;
 	border: 1px solid black;
 	position: fixed;

@@ -48,7 +48,7 @@
     filter: grayscale(100%); }
   to {
     filter: grayscale(0%); } }
-@keyframes grayscale {
+@keyframes grayScale {
   from {
     filter: grayscale(0%); }
   to {
@@ -201,8 +201,6 @@ body {
   font-family: 'Barrio', cursive; }
 
 .left-background {
-  /*	animation: entranceLeft 2s forwards;
-  */
   border-radius: 10px;
   padding-top: 100px;
   display: inline-block;
@@ -281,6 +279,7 @@ body {
   width: 180px; }
 
 .menu-background2 {
+  animation: menu-bg-fade-out1 1s forwards;
   transition: all 1s;
   border: 1px solid black;
   position: fixed;
