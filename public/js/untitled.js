@@ -116,7 +116,21 @@ display.innerHTML = scroll
 
 
 
-
+window.addEventListener("scroll", test2);
+function test2() {
+if (window.pageYOffset > scroll) {
+	console.log("down")
+	if (window.pageYOffset > 720) {
+		console.log("down over 720")
+	}
+}  else {
+	if (window.pageYOffset < 720) {
+		console.log("up under 720")
+	}
+		console.log("up")
+	}
+		scroll = window.pageYOffset
+}
 
 
 
