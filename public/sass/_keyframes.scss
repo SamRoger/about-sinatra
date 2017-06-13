@@ -2,133 +2,138 @@
 	from { top: -100px; }
 	to { top: 7px; }
 }
-
-@keyframes bounce {
-	from { font-size: 2em; }
-	to { font-size: 2.2em; }
-}
-
-@keyframes entranceLeft {
-
-	from { left: 0px; }
-	to { left: 220px; }
-}
-
-@keyframes entranceRight {
-	from { right: 0px; }
-	to { right: 220px; }
-}
-
-@keyframes fadeinOpacity {
+// =========================================
+@keyframes opacityIn {
 	from { opacity: 0 }
 	to { opacity: 1 }
 }
-
-@keyframes fadeOutOpacity {
+@keyframes opacityOut {
 	from { opacity: 1 }
 	to { opacity: 0 }
 }
-
+// =========================================
 @keyframes fadein {
 	from { background-color: rgb(240,58,105); }
 	to { background-color: #fff }
 }
-
-@keyframes colorChange {
-	from { color: teal; }
-	to { color: rgb(240,58,105); }
-}
-
-@keyframes size {
-	from { font-size: 0px; }
-	to { font-size: 30px; }
-}
-
+// =========================================
 @keyframes colorIn {
 	from { filter: grayscale(100%); }
 	to { filter: grayscale(0%); }
 }
-
 @keyframes grayScale {
 	from { filter: grayscale(0%); }
 	to { filter: grayscale(100%); }
 }
-
+// =========================================
 @keyframes menu-bg-fade {
 	from { background-color: salmon; }
 	to { background-color: rgb(204,202,190); }
 }
-
 @keyframes menu-bg-fade-out1 {
 	from { background-color: rgb(204,202,190); }
 	to { background-color: salmon; }
 }
-
+// =========================================
 @keyframes menu-bg-fade-midway {
 	from { background-color: rgb(204,202,190); }
 	to { background-color: rgb(168,86,79); }
 }
-
 @keyframes menu-bg-fade-back {
 	from { background-color: rgb(168,86,79); }
 	to { background-color: rgb(204,202,190); }
-}
-
-
-// @keyframes grayscale100 {
-// 	from { filter: grayscale(0%); }
-// 	to { filter: grayscale(to); }
-// }
-
-@keyframes blurOut {
-	from { margin-left: 0; }
-  to { margin-left: 60px; }
-
-	from { filter: blur(5px); }
-		to { filter: blur(0px); }
-}
-
+}	
+// =========================================
 @keyframes blurIn {
 	from { filter: blur(0px); }
 	to { filter: blur(5px); }
 }
-
 @keyframes blurOut {
 	from { filter: blur(5px); }
-	to { filter: blur(10px); }
+	to { filter: blur(0px); }
+}
+// =========================================
+@keyframes leftRightTwist {
+	from { transform: rotate(-20deg); }
+	to { transform: rotate(0deg); }
+}
+@keyframes rightLeftTwist {
+	from { transform: rotate(20deg); }
+	to { transform: rotate(0deg); }
+}
+// =========================================
+@keyframes slideLeftBack {
+	from {left: -500px; }
+	to {left: 220px; }
+}
+@keyframes slideRight {
+	from {left: 220px; }
+	to {left: -500px; }
+}
+// =========================================
+@keyframes leftAnimation {
+	0% { left: 220px; 
+		transform: rotate(-20deg);
+		opacity: 1;
+	}
+	
+	50% {
+		left: 0px;
+		transform: rotate(20deg);
+		opacity: 0.7;
+	}
+
+	100% {
+		left: -500px;
+		transform: rotate(20deg);
+		opacity: 0;
+	}
+}
+// =========================================
+@keyframes rightAnimation {
+	0% {
+		left: -0px;
+		transform: rotate(20deg);
+		opacity: 1;
+	}
+	
+	50% {
+		left: 225px;
+		transform: rotate(-20deg);
+		opacity: 0.7;
+	}
+
+	100% {
+		left: 500px;
+		transform: rotate(-20deg);
+		opacity: 0;
+	}
+}
+// =========================================
+@keyframes slideLeft {
+	from { left: 200px; }
+	to { left: -500px; }
 }
 
-@keyframes motion {
-	from { margin-left: 0; }
-  to { margin-left: 340px; }
+@keyframes slideBack {
+	from { left: -500px; }
+	to { left: 220px;}
 }
-
-@keyframes blurOut {
-	from { filter: blur(0px); }
-	to { filter: blur(5px); }
+// =========================================
+@keyframes spin {
+	from { transform: rotateY(0deg)}
+	to { transform: rotateY(360deg)}
 }
-
-// @keyframes rotate leftRight {
-// 	from
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// =========================================
+@keyframes swell {
+	from { transform: scale(1)}
+	to { transform: scale(1.08)}
+}
+@keyframes swellBack {
+	from { transform: scale(1.08)}
+	to { transform: scale(1)}
+}
+// =========================================
 
 
 

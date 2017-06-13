@@ -1,18 +1,31 @@
 .menu-background {
-	margin-top: -100px;
+	margin-top: -120px;
 	z-index: -10;
 	position: absolute;
-	height: 300px;
+	height: 200px;
 	width: 100%;
-	background-color: rgb(220, 118, 51);
-/*	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-image: url("../img/mind.jpg");*/
+	border-bottom: 20px solid black;
+	position: fixed;
+	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	background-image: url("../img/guitar.png");
+	
 }
 
+// .circle {
+// 	animation: rotate infinite 5s linear;
+// 	position: relative;
+// 	top: 10px;
+// 	height: 300px;
+// 	background-repeat: no-repeat;
+// 	background-size: 100px;
+// 	background-position: center;
+// 	background-image: url("../img/circle.png");
+// }
+
 .sam {
-	color: #ffffff;
+	color: #fff;
 	font-size: 20px;
 }
 
@@ -23,25 +36,30 @@
 .menu-background2 {
 	animation: menu-bg-fade-out1 1s forwards;
 	transition: all 1s;
-	border: 1px solid black;
+	// border: 1px solid black;
 	position: fixed;
 	margin-left: 20px;
-	z-index: 10;
+	z-index: -10;
 	top: 38px;
 	background-color: salmon;
 	height: 90px;
 	width: 100%;
 	margin: 0;
+
+	// background-repeat: no-repeat;
+ //    background-size: cover;
+	// background-position: center;
+	// background-image: url("../img/star-dust.jpg");
 }
 
-ul {
+.menu {
 	animation: topDown 1s forwards;
 	z-index: 10;
 	position: fixed;
 	margin-left: -140px;
 }
 
-li {
+.li {
 	cursor: pointer;
 	padding: 8px;
 	box-shadow: 1px 1px 2px black;
